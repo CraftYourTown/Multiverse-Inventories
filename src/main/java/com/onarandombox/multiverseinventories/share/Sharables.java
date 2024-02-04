@@ -479,7 +479,7 @@ public final class Sharables implements Shares {
                 public void updateProfile(PlayerProfile profile, Player player) {
                     Location bedSpawnLocation = null;
                     try {
-                        bedSpawnLocation = player.getBedSpawnLocation();
+                        bedSpawnLocation = player.getPotentialBedLocation();
                     } catch (NullPointerException e) {
                         // TODO this is a temporary fix for the bug occurring in 1.16.X CB/Spigot/Paper
                         StackTraceElement[] stackTrace = e.getStackTrace();
